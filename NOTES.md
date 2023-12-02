@@ -5,7 +5,8 @@
 
 ## ENCAPSULAMENTO
 
-´´´cs
+```cs
+
 private string nome;
 
 public string Nome{
@@ -15,7 +16,8 @@ public string Nome{
     nome = value;
   }
 }
-´´´
+
+```
 
 
 ## HERANÇA
@@ -24,7 +26,8 @@ Exemplo:
 
 Aluno herda Pessoa
 
-´´´cs
+```cs
+
 public class Pessoa{
   //bloco de codigo
 }
@@ -32,7 +35,8 @@ public class Pessoa{
 public class Aluno : Pessoa{
   //bloco de codigo
 }
-´´´
+
+```
 
 
 ## POLIMORFISMO
@@ -44,7 +48,8 @@ Pessoa tem um método Apresentar() mais genérico
 
 Aluno precisa de um método Apresentar() mais específico
 
-´´´cs
+```cs
+
 public class Pessoa{
   //bloco de codigo
   public virtual string Apresentar(){
@@ -58,4 +63,5 @@ public class Aluno : Pessoa{
     return $"Meu nome é {nome}, e eu tenho {idade} anos. Minha nota é {nota}.";
   }
 }
-´´´
+
+```
