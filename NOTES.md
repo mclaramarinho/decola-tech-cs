@@ -65,3 +65,41 @@ public class Aluno : Pessoa{
 }
 
 ```
+
+## CLASSES ABSTRATAS
+
+São um modelo para ser herdado por uma classe filha
+
+Elas não podem ser instanciadas
+
+Conta --> ContaCorrente
+
+Conta --> ContaPoupanca
+
+Tudo que Conta possui é possuído pelas suas especializações.
+
+Apenas suas especializações podem ser instanciadas.
+
+```cs
+
+public abstract class Conta{
+  // bloco de codigo
+}
+
+```
+
+## MÉTODOS ABSTRATOS
+
+Servem de modelo para ser herdado pelas classes filhas
+
+Na classe em que ele aparece como abstrato --> não possui corpo, apenas a assinatura
+
+A classe que herda é obrigada a instanciar um método com a assinatura do método abstrato.
+
+```cs
+
+public abstract class Conta{
+  public abstract void Creditar();
+}
+
+```
